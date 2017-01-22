@@ -11,7 +11,6 @@ import java.io.StringWriter;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
 import static spark.Spark.halt;
 
 /**
@@ -35,6 +34,7 @@ public class SparkRoutes {
                     halt(500);
                     return null;
                 }
+                System.out.println(writer);
                 return writer;
             }
         });
