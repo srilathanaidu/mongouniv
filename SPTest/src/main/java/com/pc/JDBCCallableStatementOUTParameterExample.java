@@ -1,4 +1,4 @@
-package com.mkyong.jdbc;
+package com.pc.jdbc;
 
 import java.sql.CallableStatement;
 import java.sql.Date;
