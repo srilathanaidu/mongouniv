@@ -14,8 +14,9 @@ import java.util.List;
 public class FindSweden {
     public static void main(String... args) {
         MongoClient client = new MongoClient();
+        //Validate client object values 
         MongoDatabase db = client.getDatabase("video");
-        MongoCollection<Document> coll = db.getCollection("movieDetails");
+        MongoCollection<Document> collection = db.getCollection("movieDetails");
         MongoCursor<Document> cursor = coll.find().iterator();
         int count = 0;
         try {
